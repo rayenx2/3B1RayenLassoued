@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of LASSOUED Rayen, an engineering student.">
     <title>LASSOUED Rayen - Contact</title>
     <link rel="stylesheet" type="text/css" href="contact.css">
+	<script src="validation.js"></script>
+
 </head>
 
 <body>
@@ -13,24 +17,48 @@
         <p>Engineering Student</p>
         <hr>
     </header>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="academiccareers.html">Academic Careers</a>
         <a href="experiences.html">Experiences</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <hr>
-    <table>
-        <tr>
-            <td>
-                <section id="contact-info">
-                    <h2>Contact Information</h2>
-                    <p>E-mail: Lassoued.rayen@esprit.tn</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/lassoued-rayen-16045b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
-                </section>
-            </td>
-        </tr>
-    </table>
+
+    <main>
+        <article>
+            <h2>Contact Information</h2>
+            <address>
+                <p>E-mail: <a href="mailto:Lassoued.rayen@esprit.tn">Lassoued.rayen@esprit.tn</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lassoued-rayen-16045b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
+            </address>
+
+            <h2>Contact Form</h2>
+            <form action="process_form.php" method="post">
+                <div>
+                    <label for="noun">Noun:</label>
+                    <input type="text" id="noun" name="noun" required>
+                </div>
+
+                <div>
+                    <label for="prenoun">Prenoun:</label>
+                    <input type="text" id="prenoun" name="prenoun" required>
+                </div>
+
+                <div>
+                    <label for="idNumber">CIN Number:</label>
+                    <input type="text" id="idNumber" name="idNumber" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </main>
 
     <footer>
         <p>&copy; 2023 LASSOUED Rayen</p>
@@ -38,3 +66,4 @@
 </body>
 
 </html>
+
