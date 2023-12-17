@@ -28,7 +28,7 @@ function validateForm(event) {
 }
 
 function isValidCIN(cin) {
-    return /^\d{1,8}$/.test(cin);
+    return /^\d{8,8}$/.test(cin);
 }
 
 function isValidName(name) {
